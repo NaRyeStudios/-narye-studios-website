@@ -216,6 +216,22 @@ details.note summary::-webkit-details-marker{display:none}
 details.note summary::after{content:"+";color:var(--accent)}
 details.note[open] summary::after{content:"\2212"}
 details.note p{margin:0 0 22px;color:var(--muted)}
-.portrait{min-height:340px;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line);border-radius:4px;color:var(--muted);background:var(--band)}
+.portrait{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:transparent;
+  border:0;
+  border-radius:0;
+}
+
+.portrait img{
+  display:block;
+  width:100%;
+  max-width:420px;
+  height:auto;
+  margin:0 auto;
+  border-radius:4px;
+}
 .mail{font:600 clamp(24px,5vw,34px)/1.2 var(--serif);word-break:break-word}
 @media (min-width:900px){.two{grid-template-columns:1fr 1fr;gap:64px;align-items:start}}
